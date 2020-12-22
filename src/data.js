@@ -1,22 +1,20 @@
 'use strict';
 
 /* Program Data
-
   in this file you can declare variables to store important data for your program
   the data can only be primitives, objects or arrays
   do not store dom elements in these variables!!!!
     your handlers will query the DOM each time they need to make a change
-
   these variables will be imported by your handlers when necessary
     not by your logic
     not by your listeners
-
 */
+
 
 // this is example data for the starter demo
 //  delete this data when you begin and use the own quiz data instead
 /**
- * data that is saved and used between user interactionss
+ * data that is saved and used between user interactions
  * @property {string} separator - the full user artwork
  * @property {string[]} lines - all the lines that have been entered
  */
