@@ -7,17 +7,13 @@
 <!-- BEGIN TOC -->
 
 - [handlers](#handlers)
-  - [artify.js](#srchandlersartifyjs)
-  - [change-separator.js](#srchandlerschange-separatorjs)
+  - [start-button.js](#srchandlersstart-buttonjs)
 - [init](#init)
   - [index.js](#srcinitindexjs)
 - [listeners](#listeners)
-  - [change-separator.js](#srclistenerschange-separatorjs)
-  - [inputting.js](#srclistenersinputtingjs)
+  - [start-button.js](#srclistenersstart-buttonjs)
 - [logic](#logic)
-  - [reverse.js](#srclogicreversejs)
 - [views](#views)
-  - [artify.js](#srcviewsartifyjs)
 - [data.js](#srcdatajs)
 
 <!-- END TOC -->
@@ -38,31 +34,7 @@ Handler function define user interactions. They will:
 
 ---
 
-### [./src/handlers/artify.js](./src/handlers/artify.js?study)
-
-<a name="artifyHandler"></a>
-
-## artifyHandler
-
-creates a mirror-image rendering of the user input and displays the growing artwork
-
-| Param | Type               | Description                                                |
-| ----- | ------------------ | ---------------------------------------------------------- |
-| event | <code>Event</code> | triggered whenever a user releases a key in the input area |
-
----
-
-### [./src/handlers/change-separator.js](./src/handlers/change-separator.js?study)
-
-<a name="changeSeparatorHandler"></a>
-
-## changeSeparatorHandler
-
-changes the program's separator value
-
-| Param | Type               | Description                                                 |
-| ----- | ------------------ | ----------------------------------------------------------- |
-| event | <code>Event</code> | triggered whenever a user types in the separator input area |
+### [./src/handlers/start-button.js](./src/handlers/start-button.js?study)
 
 [TOP](#DOCS)
 
@@ -90,25 +62,7 @@ You can use the same handler in many different listeners, or add more than one l
 
 ---
 
-### [./src/listeners/change-separator.js](./src/listeners/change-separator.js?study)
-
-<a name="change separator
-calls handler that changes the mirror-arts separator"></a>
-
-## change separator
-
-calls handler that changes the mirror-arts separator
-
----
-
-### [./src/listeners/inputting.js](./src/listeners/inputting.js?study)
-
-<a name="user input
-calls the reverseHandler when a user types in the input field"></a>
-
-## user input
-
-calls the reverseHandler when a user types in the input field
+### [./src/listeners/start-button.js](./src/listeners/start-button.js?study)
 
 [TOP](#DOCS)
 
@@ -127,22 +81,6 @@ Logic functions will _never_ ...
 - use events
 - use prompt/alert/confirm
 - use data that is not passed as a parameter
-
----
-
-### [./src/logic/reverse.js](./src/logic/reverse.js?study)
-
-<a name="reverse"></a>
-
-## reverse ⇒ <code>string</code>
-
-reverses a string
-
-**Returns**: <code>string</code> - the string reversed
-
-| Param | Type                | Description         |
-| ----- | ------------------- | ------------------- |
-| input | <code>string</code> | a string to reverse |
 
 [TOP](#DOCS)
 
@@ -164,24 +102,6 @@ VIEW functions will _never_ ...
 - use prompt/alert/confirm
 - use data that is not passed as a parameter
 
----
-
-### [./src/views/artify.js](./src/views/artify.js?study)
-
-<a name="artify"></a>
-
-## artify ⇒ <code>HTMLPreElement</code>
-
-creates a PRE element with artful text
-each line in the provided array will be mirrored around the separator
-
-**Returns**: <code>HTMLPreElement</code> - a PRE element with the rendered string content
-
-| Param     | Type                              | Description                                                                       |
-| --------- | --------------------------------- | --------------------------------------------------------------------------------- |
-| lines     | <code>Array.&lt;string&gt;</code> | an array of strings, each one will be mirrored around the separator on a new line |
-| separator | <code>string</code>               | the string to separate mirrored lines                                             |
-
 [TOP](#DOCS)
 
 ---
@@ -190,11 +110,21 @@ each line in the provided array will be mirrored around the separator
 
 ## [./src/data.js](./src/data.js?study)
 
+## Constants
+
+<dl>
+<dt><a href="#data">data</a></dt>
+<dd><p>data that is saved and used between user interactions</p>
+</dd>
+<dt><a href="#quizData">quizData</a></dt>
+<dd></dd>
+</dl>
+
 <a name="data"></a>
 
 ## data
 
-data that is saved and used between user interactionss
+data that is saved and used between user interactions
 
 **Properties**
 
@@ -202,5 +132,9 @@ data that is saved and used between user interactionss
 | --------- | --------------------------------- | ------------------------------------ |
 | separator | <code>string</code>               | the full user artwork                |
 | lines     | <code>Array.&lt;string&gt;</code> | all the lines that have been entered |
+
+<a name="quizData"></a>
+
+## quizData
 
 <!-- END DOCS -->
