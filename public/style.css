@@ -1,0 +1,190 @@
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.jpeg);
+   background-repeat: no-repeat;
+    
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    color: #FC7E09;
+    }
+
+header h1 {
+    font-size: 100px;
+    font-weight: bolder;
+  margin-left: 40px;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+   .someText {
+    padding-top: 50px;
+    font-size: 40px;
+       margin-left: 600px;
+       font-weight: bold;
+   }
+   .JS {
+       color: yellow;
+   }
+/*Start BUTTON*/
+section.starter {
+    position: absolute;
+    bottom: 20%;
+    left:15%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 60%;
+}
+.start-button{
+    align-self:center;
+     font-size: 40px;
+     font-weight: bolder;
+     color: #F9E325;
+     background-color:#FC7E09;
+     height: 200px;
+     width: 250px;
+     cursor: pointer;
+     border-radius: 50px;
+     border: 1px solid #F9E325;
+     
+ }
+
+/*Main*/
+#show{
+    display: none;
+}
+
+article.question {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+article.answers,
+.userInfo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 50px;
+
+}
+section.modify {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.modify-buttons {
+    margin-right: 10px;
+}
+
+.modify-buttons button,
+.modify-buttons a{
+    padding: 50px;
+   margin-bottom: 10px;
+    color: #F9E325;
+    background-color : #FC7E09;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.modify-buttons a {
+    display: inline-block;
+}
+
+.modify-buttons button:focus{
+    outline: none;
+}
+/* SCORE */
+.score {
+    position: absolute;
+    top: 5%;
+    right: 45%;
+    color: #F9E325;
+    background-color:#FC7E09;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 50px;
+    border:  1px solid #F9E325;
+}
+
+/* QUESTION AND USER INFO */
+.text {
+   
+    text-align: left;
+    color: #FC7E09;
+    font-size: 50px;
+    font-weight: bolder;
+     padding: 15px;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+   
+}
+
+.text:empty{
+    padding: 0;
+}
+
+/* BUTTONS */
+.btn {
+  
+    bottom: 10%;
+    left:10%;
+    text-align: center;
+    width: 20%;
+    padding: 20px;
+    font-size: 30px;
+    color: #F9E325;
+ background-color: #FC7E09;
+    border-radius: 50px;
+    border:  1px solid #F9E325;
+    
+}
+
+
+.btn:focus, .btn:active,
+.start-button:focus, .start-button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Correct and incorrect answers */
+.correct {
+    background-color:#FC7E09;
+}
+
+.incorrect {
+    background-color:#007bff;
+}
+
+/* centered */
+.center {
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: fit-content;
+}
+
+.invisible{
+    display: none;
+}
+
+/*Media query*/
+
+@media only screen and (min-width: 768px) {
+
+  
+}
